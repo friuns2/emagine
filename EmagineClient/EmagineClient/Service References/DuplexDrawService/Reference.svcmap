@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6abeddb2-6b01-41bf-8be6-66a90bd48e3c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60816/DuplexDrawService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DuplexDrawService.xsd" MetadataType="Schema" ID="a9245bc7-a2ed-46ab-bebf-69aea0ad4b0d" SourceId="1" SourceUrl="http://localhost:60816/DuplexDrawService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DuplexDrawService1.xsd" MetadataType="Schema" ID="682b7c33-2849-43a5-a8e8-8249acebe91f" SourceId="1" SourceUrl="http://localhost:60816/DuplexDrawService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DuplexDrawService.disco" MetadataType="Disco" ID="ae8dbf77-a01d-429d-a0eb-a6584a80b9cb" SourceId="1" SourceUrl="http://localhost:60816/DuplexDrawService.svc?disco" />
+    <MetadataFile FileName="DuplexDrawService.wsdl" MetadataType="Wsdl" ID="d5046f61-1396-46ef-987c-a3737ad253d1" SourceId="1" SourceUrl="http://localhost:60816/DuplexDrawService.svc?wsdl" />
+    <MetadataFile FileName="DuplexDrawService2.xsd" MetadataType="Schema" ID="96228a2f-38fb-4847-a8d4-732ffe72f41d" SourceId="1" SourceUrl="http://localhost:60816/DuplexDrawService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
