@@ -1,0 +1,6 @@
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\bin\EmagineServer.dll
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\bin\EmagineServer.pdb
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\obj\Debug\EmagineServer.dll
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\obj\Debug\EmagineServer.pdb
+C:\Users\Gobind\Desktop\EmagineServer\EmagineServer\bin\System.ServiceModel.PollingDuplex.dll
