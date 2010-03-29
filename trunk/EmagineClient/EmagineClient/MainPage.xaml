@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="EmagineClient.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:local="clr-namespace:EmagineClient"
+    mc:Ignorable="d"
+    d:DesignHeight="400" d:DesignWidth="1172">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="GrayBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Gray" Offset="0.624"/>
+                <GradientStop Color="LightGray" Offset="0.948"/>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="BlueBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4444A1" Offset="0.78"/>
+                <GradientStop Color="#FF487381" Offset="0.168"/>
+            </LinearGradientBrush>
+
+            <DataTemplate x:Key="ConversationTemplate">
+                <StackPanel Margin="2" Background="LightYellow">
+                    <Border Margin="3" BorderBrush="{StaticResource GrayBrush}" BorderThickness="1" CornerRadius="4" Padding="3">
+                        <StackPanel Background="White">
+                            <TextBlock TextWrapping="Wrap"  Margin="2" Padding="2" Text="{Binding Path=Text}"></TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                        <TextBlock Text="From "></TextBlock>
+                        <TextBlock Text="{Binding Path=From}"></TextBlock>
+                        <TextBlock Text=" On "></TextBlock>
+                        <TextBlock Text="{Binding Path=Time}"></TextBlock>
+                    </StackPanel>
+
+                </StackPanel>
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="LightGray">
+        <StackPanel x:Name="InstallButtonPanel" Visibility="Collapsed" Margin="10" >
+            <Button x:Name="InstallButton" Content="Install e-magine" Click="InstallButton_Click" Width="100" Height="50"></Button>
+        </StackPanel>
+        <Border x:Name="LoginPanel" Background="{StaticResource BlueBrush}" Margin="60" CornerRadius="4" BorderBrush="LightGray">
+            <StackPanel Margin="10" x:Name="LoginButtonPanel" Visibility="Collapsed">
+                <TextBlock Margin="5" FontSize="30" Foreground="White" Text="e-magine: experience education electronically" />
+                <TextBlock  Margin="5" Foreground="LightGray" Text="Enter Your Name Below" FontSize="20"/>
+                <TextBox  Margin="5" Name="InputUser"  FontSize="20"/>
+                <Button  Margin="5" FontSize="16" Content="Get Me In" Click="ButtonLogin_Click" />
+                <Border Background="{StaticResource BlueBrush}" VerticalAlignment="Bottom" Margin="10,100,10,10" CornerRadius="4" BorderBrush="LightGray">
+                    <StackPanel Margin="4">
+                        
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+        </Border>
+
+        <Grid Background="LightGray" x:Name="LayoutRoot" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="2"  Background="{StaticResource GrayBrush}" Margin="10,10,10,0" CornerRadius="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Canvas Grid.Column="0" x:Name="DrawingCanvas" Margin="4"  Background="White" 
+                    MouseLeftButtonDown="DrawingCanvas_MouseLeftButtonDown"
+                    MouseLeftButtonUp="DrawingCanvas_MouseLeftButtonUp"
+                    MouseMove="DrawingCanvas_MouseMove"
+                    />
+                    <basics:GridSplitter VerticalAlignment="Stretch" Grid.Column="1" HorizontalAlignment="Center" Width="5"></basics:GridSplitter>
+
+                    <Grid Grid.Column="2" Margin="3" Width="220" MinWidth="100">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Talk" Foreground="White" FontWeight="Bold" Grid.Row="0"/>
+                        <TextBox x:Name="TalkText" TextWrapping="Wrap" Grid.Row="1" Height="40" ></TextBox>
+                        <Button Grid.Row="2" Content="Update" x:Name="UpdateButton" Click="UpdateButton_Click"></Button>
+                        <ScrollViewer  Grid.Row="3" x:Name="TalkContainer">
+                            <ItemsControl x:Name="ConversationList" ItemsSource="{Binding MessageCollection}" ItemTemplate="{StaticResource ConversationTemplate}"></ItemsControl>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="0" Height="40" Background="{StaticResource GrayBrush}" Margin="10,0,10,0" CornerRadius="5">
+                <StackPanel Orientation="Horizontal">
+                    <Button Tag="Pencil" Margin="4" Click="ButtonTool_Click" Height="30" Width="30">
+                        <Image Source="Resources/pencil.jpg"/>
+                    </Button>
+                    <Button Tag="Pen" Margin="4" Height="30" Click="ButtonTool_Click" Width="30">
+                        <Image Source="Resources/pen.jpg"/>
+                    </Button>
+                    <Button Tag="Brush" Margin="4" Height="30" Click="ButtonTool_Click" Width="30">
+                        <Image Source="Resources/brush.jpg"/>
+                    </Button>
+                    <Button Tag="Rectangle" Margin="4" Height="30" Click="ButtonTool_Click" Width="30">
+                        <Image Source="Resources/rect.png"/>
+                    </Button>
+                    <Button Tag="Ellipse" Margin="4" Height="30" Click="ButtonTool_Click" Width="30">
+                        <Image Source="Resources/circle.png"/>
+                    </Button>
+                    <TextBlock x:Name="Notification" FontSize="14" Padding="2" Foreground="White"/>
+                </StackPanel>
+            </Border>
+            <StackPanel  Grid.Row="0" >
+                <Border Margin="5" CornerRadius="3" BorderBrush="White" BorderThickness="2" Background="{StaticResource GrayBrush}" >
+                    <TextBlock Margin="2"  Text="e-magine" FontSize="20" Foreground="White"/>
+                </Border>
+                <StackPanel Orientation="Horizontal" Margin="10,5,10,0" Background="LightGray" Height="22" >
+                    <Button Width="20" Height="20">
+                        <Canvas x:Name="cnLine"  Background="{Binding Path=StrokeColor, Mode=TwoWay}" MouseLeftButtonDown="ButtonColor_Click" Width="15"  Height="15"/>
+                    </Button>
+                    <TextBlock Text="Line Color" Width="60" Margin="3,3,5,0"/>
+                    <Button Width="20" Height="20">
+                        <Canvas x:Name="cnBack"  Background="{Binding Path=FillColor, Mode=TwoWay}" MouseLeftButtonDown="ButtonColor_Click" Width="15" Height="15"/>
+                    </Button>
+                    <TextBlock Text="Brush Color" Width="60" Margin="3,3,30,0"/>
+                    <TextBlock Text="Line Width" Width="60" Margin="3,3,2,0"/>
+                    <Slider Minimum="0" Maximum="100" Width="100" Value="{Binding Path=StrokeWidth, Mode=TwoWay}" Name="StorkeSlider"/>
+                    <Button Content="Start" Width="50" Name="StartAudioCapture_Button" Click="StartAudioCapture_Button_Click" Margin="0,0,5,0"/>
+                    <Button Content="Stop" Width="50" Name="StopAudioCapture_Button" Click="StopAudioCapture_Button_Click" />
+                    <MediaElement Name="me" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1" x:Name="ColorPanel" Visibility="Collapsed" Height="240" Margin="10,5,10,20" >
+                <Button Content="[^] Choose the below color and click here to select" HorizontalContentAlignment="Left" x:Name="ButtonSelect" Click="ButtonSelect_Click" Height="30"/>
+                <local:ColorPicker Margin="3" x:Name="ColorPicker" Height="200" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

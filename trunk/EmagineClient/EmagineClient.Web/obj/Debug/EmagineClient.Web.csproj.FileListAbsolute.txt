@@ -1,0 +1,5 @@
+C:\Users\Gobind\Desktop\EmagineClient\EmagineClient.Web\bin\EmagineClient.Web.dll
+C:\Users\Gobind\Desktop\EmagineClient\EmagineClient.Web\bin\EmagineClient.Web.pdb
+C:\Users\Gobind\Desktop\EmagineClient\EmagineClient.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\EmagineClient\EmagineClient.Web\obj\Debug\EmagineClient.Web.dll
+C:\Users\Gobind\Desktop\EmagineClient\EmagineClient.Web\obj\Debug\EmagineClient.Web.pdb
