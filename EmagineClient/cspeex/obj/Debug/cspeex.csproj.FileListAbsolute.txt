@@ -1,0 +1,15 @@
+C:\Users\Gobind\Desktop\WorkingAudio\cspeex\bin\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\WorkingAudio\cspeex\bin\Debug\cspeex.pdb
+C:\Users\Gobind\Desktop\WorkingAudio\cspeex\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\WorkingAudio\cspeex\obj\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\WorkingAudio\cspeex\obj\Debug\cspeex.pdb
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex\bin\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex\bin\Debug\cspeex.pdb
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex\obj\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex\obj\Debug\cspeex.pdb
+C:\Users\Gobind\Desktop\EmagineClient\cspeex\bin\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\EmagineClient\cspeex\bin\Debug\cspeex.pdb
+C:\Users\Gobind\Desktop\EmagineClient\cspeex\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\EmagineClient\cspeex\obj\Debug\cspeex.dll
+C:\Users\Gobind\Desktop\EmagineClient\cspeex\obj\Debug\cspeex.pdb
