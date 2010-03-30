@@ -1,12 +1,12 @@
-﻿<xapCache source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\Bin\Debug\EmagineClient.xap" lastWriteTime="3/30/2010 5:27:08 AM">
-  <file source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\obj\Debug\EmagineClient.dll" archivePath="EmagineClient.dll" lastWriteTime="3/30/2010 5:27:08 AM" />
-  <file source="C:\Users\Gobind\Desktop\EmagineClient\cspeex-SL\Bin\Debug\cspeex.dll" archivePath="cspeex.dll" lastWriteTime="3/30/2010 5:27:07 AM" />
+﻿<xapCache source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\Bin\Debug\EmagineClient.xap" lastWriteTime="3/30/2010 5:42:26 AM">
+  <file source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\obj\Debug\EmagineClient.dll" archivePath="EmagineClient.dll" lastWriteTime="3/30/2010 5:42:26 AM" />
+  <file source="C:\Users\Gobind\Desktop\EmagineClient\cspeex-SL\Bin\Debug\cspeex.dll" archivePath="cspeex.dll" lastWriteTime="3/30/2010 5:42:25 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Json.dll" archivePath="System.Json.dll" lastWriteTime="3/3/2010 12:38:44 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Runtime.Serialization.Json.dll" archivePath="System.Runtime.Serialization.Json.dll" lastWriteTime="3/3/2010 12:38:44 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Extensions.dll" archivePath="System.ServiceModel.Extensions.dll" lastWriteTime="3/3/2010 12:38:44 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.PollingDuplex.dll" archivePath="System.ServiceModel.PollingDuplex.dll" lastWriteTime="3/3/2010 12:38:44 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="3/3/2010 12:38:44 AM" />
-  <file source="C:\Users\Gobind\Desktop\EmagineClient\WavMss\Bin\Debug\WAVMss.dll" archivePath="WAVMss.dll" lastWriteTime="3/30/2010 5:27:07 AM" />
+  <file source="C:\Users\Gobind\Desktop\EmagineClient\WavMss\Bin\Debug\WAVMss.dll" archivePath="WAVMss.dll" lastWriteTime="3/30/2010 5:42:25 AM" />
   <file source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="3/28/2010 1:36:01 PM" />
-  <file source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/30/2010 5:27:08 AM" />
+  <file source="C:\Users\Gobind\Desktop\EmagineClient\EmagineClient\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/30/2010 5:42:26 AM" />
 </xapCache>
