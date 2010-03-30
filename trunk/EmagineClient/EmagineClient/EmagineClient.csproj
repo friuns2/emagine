@@ -101,6 +101,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="StreamAudioSink.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -152,7 +153,16 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\cspeex-SL\cspeex-SL.csproj">
+      <Project>{A9BF8E47-639E-4FBC-A67A-660DBCCAE602}</Project>
+      <Name>cspeex-SL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WavMss\WAVMss.csproj">
+      <Project>{5633A575-96DB-4DFE-B4B2-3FF0B5132507}</Project>
+      <Name>WAVMss</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
