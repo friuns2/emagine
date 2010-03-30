@@ -1,0 +1,10 @@
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\Bin\Debug\WAVMss.dll
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\Bin\Debug\WAVMss.pdb
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Debug\WAVMss.dll
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Debug\WAVMss.pdb
+C:\Users\Gobind\Desktop\EmagineClient\WavMss\Bin\Debug\WAVMss.dll
+C:\Users\Gobind\Desktop\EmagineClient\WavMss\Bin\Debug\WAVMss.pdb
+C:\Users\Gobind\Desktop\EmagineClient\WavMss\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\EmagineClient\WavMss\obj\Debug\WAVMss.dll
+C:\Users\Gobind\Desktop\EmagineClient\WavMss\obj\Debug\WAVMss.pdb

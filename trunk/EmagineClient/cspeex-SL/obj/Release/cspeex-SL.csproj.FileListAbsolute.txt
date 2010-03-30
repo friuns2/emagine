@@ -1,0 +1,5 @@
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex-SL\Bin\Release\cspeex.dll
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex-SL\Bin\Release\cspeex.pdb
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex-SL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex-SL\obj\Release\cspeex.dll
+C:\Users\Gobind\Desktop\MyAudioTest\cspeex-SL\obj\Release\cspeex.pdb

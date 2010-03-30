@@ -1,0 +1,5 @@
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\Bin\Release\WAVMss.dll
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\Bin\Release\WAVMss.pdb
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Release\WAVMss.dll
+C:\Users\Gobind\Desktop\MyAudioTest\WavMss\obj\Release\WAVMss.pdb

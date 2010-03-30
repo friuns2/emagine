@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WAVMss">
+</Property><Property Name="Solution File" Value="C:\Users\Gobind\Desktop\WavMss\WAVMss.sln">
+</Property><Property Name="Date" Value="Tuesday, March 30, 2010">
+</Property><Property Name="Time" Value="1:22 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WAVMss.sln" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WAVMss.sln">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Project file successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WAVMss.csproj">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj.user" Description="Project user file successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WAVMss.csproj.user">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WaveFormatEx.cs" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WaveFormatEx.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="RiffParser.cs" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\RiffParser.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WaveMediaStreamSource.cs" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WaveMediaStreamSource.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WavParser.cs" Description="File successfully backed up as C:\Users\Gobind\Desktop\WavMss\Backup\WavParser.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WAVMss" Source="WAVMss.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WAVMss.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WAVMss.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
