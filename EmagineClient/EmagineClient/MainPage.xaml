@@ -134,8 +134,9 @@
                     <TextBlock Text="Line Width" Width="60" Margin="3,3,2,0"/>
                     <Slider Minimum="0" Maximum="100" Width="100" Value="{Binding Path=StrokeWidth, Mode=TwoWay}" Name="StorkeSlider"/>
                     <Button Content="Start" Width="50" Name="StartAudioCapture_Button" Click="StartAudioCapture_Button_Click" Margin="0,0,5,0"/>
-                    <Button Content="Stop" Width="50" Name="StopAudioCapture_Button" Click="StopAudioCapture_Button_Click" />
-                    <MediaElement Name="me" />
+                    <Button Content="Stop" Width="50" Name="StopAudioCapture_Button" Click="StopAudioCapture_Button_Click" Margin="0,0,5,0"/>
+                    <Button Content="Play" Width="50" Name="PlayAudioCapture_Button" Click="PlayAudioCapture_Button_Click" />
+                    <MediaElement Name="Media" Volume="10" AutoPlay="True"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Row="1" x:Name="ColorPanel" Visibility="Collapsed" Height="240" Margin="10,5,10,20" >

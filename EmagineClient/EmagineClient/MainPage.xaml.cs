@@ -18,7 +18,9 @@ using System.IO;
 using System.Globalization;
 using System.Text;
 using System.Collections.ObjectModel;
-
+using WaveMSS;
+using cspeex;
+using java.io;
 
 
 namespace EmagineClient
@@ -33,16 +35,14 @@ namespace EmagineClient
         DuplexClientHelper<DrawData> proxy;
         string userName = string.Empty;
         #endregion
-        CaptureSource audioSource;
-        //StreamAudioSink audioSink;
+        private CaptureSource _captureSource;
+        private StreamAudioSink _audioSink;
 
         #region Ctor and Methods
 
         public Page()
         {
             InitializeComponent();
-
-            //App.Current.Install();
 
             if (App.Current.InstallState != InstallState.Installed)
             {
@@ -56,9 +56,8 @@ namespace EmagineClient
             }
             
             //audio hookup
-            //audioSource = new CaptureSource();
-            //audioSink = new StreamAudioSink();
-            //audioSink.CaptureSource = audioSource;
+            _captureSource = new CaptureSource();
+            _audioSink = new StreamAudioSink();
 
             //drawing stuff
             drawArea = new DrawingArea(this.DrawingCanvas);
@@ -91,7 +90,8 @@ namespace EmagineClient
             //  + App.Current.Host.Source.Port.ToString(CultureInfo.InvariantCulture)
             //  + "/DuplexDrawService.svc";
 
-            string endPointAddress = "http://192.168.0.102/EmagineServer/DuplexDrawService.svc";
+            //string endPointAddress = "http://192.168.0.102/EmagineServer/DuplexDrawService.svc";
+            string endPointAddress = "http://gobind-pc/EmagineServer/DuplexDrawService.svc";
 
             proxy.GotNotification += (operation, data) =>
             {
@@ -243,30 +243,71 @@ namespace EmagineClient
 
         private void StartAudioCapture_Button_Click(object sender, RoutedEventArgs e)
         {
-            AudioCaptureDevice audioDevice = CaptureDeviceConfiguration.GetDefaultAudioCaptureDevice();
-
-            if (audioSource != null)
+            if (_captureSource != null)
             {
-                audioSource.Stop();
+                _captureSource.Stop();
 
-                audioSource.AudioCaptureDevice = audioDevice;
+                _captureSource.AudioCaptureDevice = CaptureDeviceConfiguration.GetDefaultAudioCaptureDevice();
+                _audioSink.CaptureSource = _captureSource;
 
                 if (CaptureDeviceConfiguration.AllowedDeviceAccess || CaptureDeviceConfiguration.RequestDeviceAccess())
                 {
-                    audioSource.Start();
+                    _captureSource.Start();
                 }
             }
         }
 
         private void StopAudioCapture_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (audioSource != null)
+            if (_captureSource != null)
             {
-                audioSource.Stop();
+                _captureSource.Stop();
 
-                //StringBuilder audioSamples = audioSink.CreateJSON();
+                string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "testFile.wav");
+                
+                if (System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
 
+                System.IO.Stream stream = System.IO.File.Create(path);
 
+                using (stream)
+                {
+                    JSpeexDec decoder = new JSpeexDec();
+                    decoder.setDestFormat(JSpeexDec.FILE_FORMAT_WAVE);
+                    decoder.setStereo(true);
+
+                    System.IO.Stream memStream = _audioSink.MemFile.InnerStream;
+                    memStream.Position = 0;
+
+                    decoder.decode(new RandomInputStream(memStream), new RandomOutputStream(stream));
+
+                    stream.Close();
+                }
+            }
+        }
+        
+        private void PlayAudioCapture_Button_Click(object sender, RoutedEventArgs e)
+        {
+            WebClient client = new WebClient();
+            Uri location = new Uri(@"http://gobind-pc/EmagineAudio/testFile.wav");
+            client.OpenReadCompleted +=new OpenReadCompletedEventHandler(OnDownloadComplete);
+            client.OpenReadAsync(location);
+        }
+
+        void OnDownloadComplete(object o, OpenReadCompletedEventArgs e)
+        {
+            try
+            {
+                System.IO.Stream stream = e.Result;
+                WaveMediaStreamSource wave = new WaveMediaStreamSource(stream);
+                this.Media.SetSource(wave);
+                this.Media.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -274,6 +315,8 @@ namespace EmagineClient
         {
             App.Current.Install();
         }
+
+        
 
 
 
